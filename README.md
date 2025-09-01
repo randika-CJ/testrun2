@@ -24,47 +24,150 @@
 
 ### 🌟 Interactive Research Ecosystem
 
-<details>
-<summary><b>🎮 Click to Explore Research Domains</b></summary>
-<br>
-
-```mermaid
-graph TB
-    A[🧠 AI Research Hub] --> B[👁️ Computer Vision]
-    A --> C[💬 Natural Language Processing]
-    A --> D[🔗 Graph Neural Networks]
-    A --> E[🏥 Healthcare AI]
-    A --> F[🤖 Federated Learning]
+<div align="center">
+  <svg width="950" height="320" viewBox="0 0 950 320" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="containerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.15"/>
+        <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.15"/>
+      </linearGradient>
+      <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+        <feMerge> 
+          <feMergeNode in="coloredBlur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+    </defs>
     
-    B --> B1[3D Scene Understanding]
-    B --> B2[Object Detection]
-    B --> B3[Neural Radiance Fields]
+    <!-- Main animated rectangular container -->
+    <rect x="50" y="30" width="850" height="260" rx="25" fill="url(#containerGrad)" 
+          stroke="#4f46e5" stroke-width="3" opacity="0.8">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 5,3; 0,0; -3,5; 0,0" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.9;0.8" dur="4s" repeatCount="indefinite"/>
+    </rect>
     
-    C --> C1[Text Generation]
-    C --> C2[Speech Recognition]
-    C --> C3[Question Answering]
+    <!-- Floating circular research areas with typing effects -->
+    <!-- Computer Vision Circle -->
+    <circle cx="180" cy="120" r="45" fill="#3b82f6" opacity="0.9" filter="url(#glow)">
+      <animate attributeName="r" values="45;50;45" dur="3s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 8,5; 0,0; -5,8; 0,0" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="180" y="115" text-anchor="middle" fill="white" font-size="11" font-weight="bold">
+      Computer
+      <animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite"/>
+    </text>
+    <text x="180" y="128" text-anchor="middle" fill="white" font-size="11" font-weight="bold">
+      Vision
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="4s" repeatCount="indefinite" begin="0.5s"/>
+    </text>
     
-    D --> D1[Knowledge Graphs]
-    D --> D2[Molecular Property]
-    D --> D3[Citation Networks]
+    <!-- NLP Circle -->
+    <circle cx="320" cy="180" r="45" fill="#10b981" opacity="0.9" filter="url(#glow)">
+      <animate attributeName="r" values="45;50;45" dur="3.5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; -6,7; 0,0; 10,-4; 0,0" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <text x="320" y="175" text-anchor="middle" fill="white" font-size="11" font-weight="bold">
+      Natural
+      <animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite" begin="1s"/>
+    </text>
+    <text x="320" y="188" text-anchor="middle" fill="white" font-size="11" font-weight="bold">
+      Language
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="4s" repeatCount="indefinite" begin="1.5s"/>
+    </text>
     
-    E --> E1[Medical Imaging]
-    E --> E2[Brain-Computer Interface]
-    E --> E3[Medical Segmentation]
+    <!-- Cybersecurity AI Circle -->
+    <circle cx="480" cy="100" r="45" fill="#dc2626" opacity="0.9" filter="url(#glow)">
+      <animate attributeName="r" values="45;50;45" dur="2.8s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 12,-6; 0,0; -8,9; 0,0" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="480" y="95" text-anchor="middle" fill="white" font-size="11" font-weight="bold">
+      Cyber
+      <animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite" begin="2s"/>
+    </text>
+    <text x="480" y="108" text-anchor="middle" fill="white" font-size="11" font-weight="bold">
+      Security
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="4s" repeatCount="indefinite" begin="2.5s"/>
+    </text>
     
-    F --> F1[Horizontal FL]
-    F --> F2[Edge Computing]
-    F --> F3[Privacy Preservation]
-
-    style A fill:#ff9999,stroke:#333,stroke-width:3px
-    style B fill:#66b3ff,stroke:#333,stroke-width:2px
-    style C fill:#99ff99,stroke:#333,stroke-width:2px
-    style D fill:#ffcc99,stroke:#333,stroke-width:2px
-    style E fill:#ff99cc,stroke:#333,stroke-width:2px
-    style F fill:#ccccff,stroke:#333,stroke-width:2px
-```
-
-</details>
+    <!-- Healthcare AI Circle -->
+    <circle cx="640" cy="200" r="45" fill="#7c3aed" opacity="0.9" filter="url(#glow)">
+      <animate attributeName="r" values="45;50;45" dur="4.2s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; -10,4; 0,0; 7,-11; 0,0" dur="6.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="640" y="195" text-anchor="middle" fill="white" font-size="11" font-weight="bold">
+      Healthcare
+      <animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite" begin="3s"/>
+    </text>
+    <text x="640" y="208" text-anchor="middle" fill="white" font-size="11" font-weight="bold">
+      AI
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="4s" repeatCount="indefinite" begin="3.5s"/>
+    </text>
+    
+    <!-- Space AI Circle -->
+    <circle cx="780" cy="130" r="45" fill="#f59e0b" opacity="0.9" filter="url(#glow)">
+      <animate attributeName="r" values="45;50;45" dur="3.7s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 6,10; 0,0; -12,3; 0,0" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="780" y="125" text-anchor="middle" fill="white" font-size="11" font-weight="bold">
+      Space
+      <animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite" begin="4s"/>
+    </text>
+    <text x="780" y="138" text-anchor="middle" fill="white" font-size="11" font-weight="bold">
+      AI
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="4s" repeatCount="indefinite" begin="4.5s"/>
+    </text>
+    
+    <!-- Quantum Computing Circle -->
+    <circle cx="240" cy="240" r="40" fill="#ec4899" opacity="0.9" filter="url(#glow)">
+      <animate attributeName="r" values="40;45;40" dur="3.3s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 9,-7; 0,0; -6,11; 0,0" dur="7.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="240" y="235" text-anchor="middle" fill="white" font-size="10" font-weight="bold">
+      Quantum
+      <animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite" begin="5s"/>
+    </text>
+    <text x="240" y="248" text-anchor="middle" fill="white" font-size="10" font-weight="bold">
+      Computing
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="4s" repeatCount="indefinite" begin="5.5s"/>
+    </text>
+    
+    <!-- Connecting animated lines -->
+    <line x1="180" y1="165" x2="320" y2="135" stroke="#64748b" stroke-width="2" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="320" y1="135" x2="480" y2="145" stroke="#64748b" stroke-width="2" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="480" y1="145" x2="640" y2="155" stroke="#64748b" stroke-width="2" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="640" y1="155" x2="780" y2="175" stroke="#64748b" stroke-width="2" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4.5s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- Floating particles for dynamic effect -->
+    <circle cx="400" cy="70" r="3" fill="#fbbf24" opacity="0.7">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 30,20; 60,0; 30,-20; 0,0" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="280" r="2" fill="#f59e0b" opacity="0.7">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; -25,15; -50,0; -25,-15; 0,0" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="200" r="3" fill="#fbbf24" opacity="0.7">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 20,35; 40,0; 20,-35; 0,0" dur="12s" repeatCount="indefinite"/>
+    </circle>
+  </svg>
+</div>
 
 </div>
 
@@ -74,12 +177,24 @@ graph TB
 
 <div align="center">
 
-| 🤖 **AI Systems** | 👁️ **Computer Vision** | 💬 **NLP & Speech** | 🔗 **Graph Networks** | 🏥 **Healthcare AI** |
+| 🛡️ **Cybersecurity AI** | 🚀 **Space AI** | 🌍 **Climate AI** | 🧬 **Biocomputing** | 💰 **Financial AI** |
 |:---:|:---:|:---:|:---:|:---:|
-| ![AI](https://img.shields.io/badge/Focus-Autonomous%20%26%20Federated-blueviolet?style=for-the-badge&logo=robot) | ![CV](https://img.shields.io/badge/Focus-3D%20Vision%20%26%20Detection-blue?style=for-the-badge&logo=eye) | ![NLP](https://img.shields.io/badge/Focus-Text%20%26%20Speech%20Gen-green?style=for-the-badge&logo=microphone) | ![GNN](https://img.shields.io/badge/Focus-Knowledge%20%26%20Molecular-orange?style=for-the-badge&logo=network-wired) | ![Health](https://img.shields.io/badge/Focus-Medical%20%26%20BCI-red?style=for-the-badge&logo=heartbeat) |
-| **Impact:** ⭐⭐⭐⭐⭐ | **Impact:** ⭐⭐⭐⭐⭐ | **Impact:** ⭐⭐⭐⭐⭐ | **Impact:** ⭐⭐⭐⭐ | **Impact:** ⭐⭐⭐⭐⭐ |
-| **Projects:** `15` | **Projects:** `12` | **Projects:** `18` | **Projects:** `8` | **Projects:** `9` |
-| <sub>*Cutting-edge autonomous systems and distributed learning*</sub> | <sub>*Advanced 3D understanding and object recognition*</sub> | <sub>*Next-gen language models and speech synthesis*</sub> | <sub>*Complex network analysis and molecular prediction*</sub> | <sub>*AI-powered medical diagnostics and interfaces*</sub> |
+| ![Cyber](https://img.shields.io/badge/FOCUS-THREAT%20DETECTION-critical?style=for-the-badge&logo=shield-alt) | ![Space](https://img.shields.io/badge/FOCUS-AUTONOMOUS%20SPACECRAFT-navy?style=for-the-badge&logo=rocket) | ![Climate](https://img.shields.io/badge/FOCUS-MODELING%20%26%20SENSING-success?style=for-the-badge&logo=globe) | ![Bio](https://img.shields.io/badge/FOCUS-DNA%20COMPUTING-purple?style=for-the-badge&logo=dna) | ![Finance](https://img.shields.io/badge/FOCUS-RISK%20%26%20TRADING-gold?style=for-the-badge&logo=chart-line) |
+| **Impact:** ⭐⭐⭐⭐⭐ | **Impact:** ⭐⭐⭐⭐ | **Impact:** ⭐⭐⭐⭐⭐ | **Impact:** ⭐⭐⭐⭐ | **Impact:** ⭐⭐⭐⭐⭐ |
+| **Projects:** `7` | **Projects:** `3` | **Projects:** `5` | **Projects:** `2` | **Projects:** `6` |
+| <sub>*Advanced threat detection and security protocols*</sub> | <sub>*Autonomous spacecraft navigation and control*</sub> | <sub>*Climate modeling and environmental monitoring*</sub> | <sub>*Revolutionary DNA-based computational systems*</sub> | <sub>*Algorithmic trading and risk assessment*</sub> |
+
+</div>
+
+### 🔬 Traditional Core Domains
+
+<div align="center">
+
+| 👁️ **Computer Vision** | 💬 **NLP & Speech** | 🔗 **Graph Networks** | 🏥 **Healthcare AI** | 🤖 **Edge AI** |
+|:---:|:---:|:---:|:---:|:---:|
+| ![CV](https://img.shields.io/badge/FOCUS-3D%20%26%20DETECTION-blue?style=flat-square&logo=eye) | ![NLP](https://img.shields.io/badge/FOCUS-TEXT%20%26%20SPEECH-green?style=flat-square&logo=microphone) | ![GNN](https://img.shields.io/badge/FOCUS-KNOWLEDGE%20%26%20MOLECULAR-orange?style=flat-square&logo=project-diagram) | ![Health](https://img.shields.io/badge/FOCUS-MEDICAL%20%26%20BCI-red?style=flat-square&logo=heartbeat) | ![Edge](https://img.shields.io/badge/FOCUS-COMPRESSION%20%26%20OPTIMIZATION-teal?style=flat-square&logo=microchip) |
+| **Impact:** ⭐⭐⭐⭐⭐ | **Impact:** ⭐⭐⭐⭐⭐ | **Impact:** ⭐⭐⭐⭐ | **Impact:** ⭐⭐⭐⭐⭐ | **Impact:** ⭐⭐⭐⭐ |
+| **Projects:** `12` | **Projects:** `18` | **Projects:** `8` | **Projects:** `9` | **Projects:** `4` |
 
 </div>
 
